@@ -2,19 +2,13 @@ import { Heading, Image, Text, VStack } from "@chakra-ui/react";
 import React from "react";
 import { BsCurrencyRupee, BsCurrencyDollar } from "react-icons/bs";
 import { Link } from "react-router-dom";
-const CurrencySymbolMapper = [
-  { inr: <BsCurrencyRupee /> },
-  { usd: <BsCurrencyDollar /> },
-];
 const CoinCard = ({
   name,
   img,
   amount,
-  url,
   id,
   currency,
   symbol,
-  currencySymbol,
 }) => {
   return (
     <>
